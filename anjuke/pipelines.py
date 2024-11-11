@@ -13,7 +13,6 @@ class AnjukePipeline(object):
         host='localhost'
         port=3306
         user='root'
-        # 由于安全起见 对数据库密码进行了加密 这里配置自己的数据库即可 （原版十分中其实已经包含 这里防君子不防小人）
         passwd='638816zxz'
         self.db_conn = pymysql.connect(host=host, port=port, db=db, user=user, passwd=passwd, charset='utf8')
         self.db_cur = self.db_conn.cursor()
